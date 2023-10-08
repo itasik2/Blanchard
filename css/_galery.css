@@ -1,0 +1,108 @@
+.galery {
+  background-image: url('../img/galery-bg.jpg');
+  background-color: var(--bg-img-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 79px;
+}
+
+.galery__content {
+  justify-content: space-between;
+}
+
+.galery__title {
+  margin-bottom: 30px;
+}
+
+.galery__radio {
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.galery__title {
+  color: var(--white);
+}
+
+.galery__radio-label {
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.galery__radio-input {
+  appearance: none;
+  position: absolute;
+}
+
+.galery__radio-text {
+  position: relative;
+  padding-left: 20px;
+  color: var(--white);
+
+}
+
+.galery__radio-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--white);
+  transform: translateY(-50%);
+}
+
+.galery__radio-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+  background-image: url('../img/radio-checked.svg');
+  background-position:  center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity var(--timing) ease-in-out;
+}
+
+.galery__radio-input:checked + .galery__radio-text::before {
+  border: 1px solid var(--btn-color);
+}
+
+.galery__radio-input:checked + .galery__radio-text::after {
+  opacity: 1;
+}
+
+.galery__radio-input + .galery__radio-text {
+  transition: color var(--timing) ease-in-out;
+}
+
+.galery__radio-input + .galery__radio-text::before {
+  transition: border var(--timing) ease-in-out;
+}
+
+.galery__radio-input:focus-visible:not(:hover) + .galery__radio-text {
+  color: var(--hover-color);
+}
+
+.galery__radio-input:focus-visible:not(:hover) + .galery__radio-text::before {
+  border: 1px solid var(--hover-color);
+}
+
+.galery__radio-input:hover + .galery__radio-text::before {
+  border: 1px solid var(--hover-color);
+}
+
+.galery__radio {
+  justify-content: flex-end;
+}
+
+
+
+.galery__list-item:not(:last-child) {
+  margin-right: 50px;
+}

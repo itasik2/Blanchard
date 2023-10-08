@@ -1,0 +1,23 @@
+:root {
+  /* colors */
+  --black: #000;
+  --white: #fff;
+  --red: #D11616;
+  --violet: #9D5CD0;
+  --light-grey: #999;
+  --dark-grey: #333;
+  --grey: #CACACA;
+  --bg-img-color: #666;
+  --fonts-color: #333;
+  --btn-color: #9D5CD0;
+  --border-color: #CACACA;
+  --border-focus-btn-color: #C283F3;
+  --border-hover-btn-color: #D1A9F0;
+  --focus-color: #7943A4;
+  --hover-color: #C283F3;
+  --active-color: #7943A4;
+
+  /* transition */
+  --timing: .2s;
+
+}

@@ -1,0 +1,40 @@
+.footer{
+  background-color: #000;
+  min-height: 140px;
+  align-items: center;
+}
+
+.footer__container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--grey);
+  transition: color var(--timing) ease-in-out;
+}
+
+.footer__link svg {
+  height: 45px;
+  width: 45px;
+  fill: currentColor;
+}
+
+.footer__list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__link:focus-visible {
+  outline: none;
+  color: var(--white);
+}
+
+.footer__link:hover {
+  color: var(--white);
+}
+
+.footer__link:active {
+  color: var(--violet);
+}
+
+

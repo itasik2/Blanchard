@@ -1,0 +1,89 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--black);
+}
+
+.header__container {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header__wrap {
+  max-width: 1300px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 173px;
+  height: 40px;
+  margin-bottom: 24px;
+}
+
+.header__nav {
+  max-width: 925px;
+  width: 100%;
+  margin-right: 30px;
+  align-items: center;
+
+}
+
+.header__nav-list {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header__link {
+  color: var(--white);
+  font-size: 18px;
+  transition: background-color var(--timing) ease-in-out, color var(--timing) ease-in-out;
+}
+
+/* .header__nav-list-item:not(:last-child) {
+  margin-right: 99px;
+} */
+
+.header__link:focus-visible:not(:hover) {
+  outline: none;
+  background-color: var(--focus-color);
+
+}
+
+.header__link:hover {
+  outline: none;
+  color: var(--hover-color);
+}
+
+.header__link:active {
+  color: var(--active-color);
+}
+
+.header__search-btn {
+  position: absolute;
+  top: 5px;
+  right: 45px;
+  width: 36px;
+  height: 36px;
+  transition: background-color var(--timing) ease-in-out;
+}
+
+.header__search-btn svg {
+  fill: var(--white);
+  transition: fill var(--timing) ease-in-out;
+}
+
+.header__search-btn:focus-visible:not(:hover) {
+  outline: none;
+  background-color: var(--focus-color);
+}
+
+.header__search-btn:hover svg {
+  fill: var(--hover-color);
+}
+
+.header__search-btn:active svg {
+  fill: var(--active-color);
+}

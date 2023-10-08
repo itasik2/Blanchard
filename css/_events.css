@@ -1,0 +1,130 @@
+.events__container {
+  flex-direction: column;
+}
+
+.events__title {
+  color: #333;
+  max-width: 485px;
+}
+
+.events__list {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.events__list-item {
+  flex-direction: column;
+  width: calc((100% - 100px) / 3);
+  min-height: 702px;
+}
+
+.events__list-item::before {
+  content: '';
+  background-color: var(--bg-img-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 300px;
+}
+
+
+.events__content {
+  justify-content: center;
+}
+
+
+/* .events__list-item:not(:last-child) {
+  margin-right: 25px;
+} */
+
+.events__img-1::before {
+  background-image: url('../img/events__img--1.jpg');
+}
+
+.events__img-2::before {
+  background-image: url('../img/events__img--2.jpg');
+}
+
+.events__img-3::before {
+  background-image: url('../img/events__img--3.jpg');
+}
+
+.events__body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 35px;
+  border: 1px solid var(--border-color);
+  /* min-height: 408px; */
+  height: 100%;
+}
+
+.events__content {
+  flex-direction: column;
+
+}
+
+.events__location {
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+
+.events__descr {
+  margin-bottom: auto;
+}
+
+.events__link {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  line-height: 32px; /* 200% */
+  color: var(--btn-color);
+  padding-bottom: 10px;
+  max-width: max-content;
+  transition: color var(--timing) ease-in-out, background-color var(--timing) ease-in-out;
+}
+
+.events__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--btn-color);
+  transition: background-color var(--timing) ease-in-out;
+}
+
+.events__link:focus-visible:not(:hover) {
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: var(--focus-color);
+  color: var(--white);
+}
+
+.events__link:focus-visible:not(:hover)::after {
+  width: 90%;
+  left: 5px;
+  background-color: var(--white);
+}
+
+.events__link:hover {
+  outline: none;
+  color: var(--hover-color);
+}
+
+.events__link:hover::after {
+  background-color: var(--hover-color);
+}
+
+.events__link:active {
+  color: var(--fonts-color);
+}
+
+.events__link:active::after {
+  background-color: var(--fonts-color);
+}

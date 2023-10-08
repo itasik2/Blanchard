@@ -1,0 +1,19 @@
+.about {
+  min-height: 455px;
+
+}
+
+.about__content {
+  max-width: 1080px;
+}
+
+.about__title {
+  color: var(--fonts-color);
+  margin-bottom: 25px;
+}
+
+.about__text {
+  color: var(--fonts-color);
+  font-size: 16px;
+  line-height: 32px; /* 200% */
+}

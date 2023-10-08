@@ -1,0 +1,29 @@
+.projects {
+  margin-bottom: 80px;
+}
+
+.projects__title {
+  margin-bottom: 27px;
+}
+
+.projects__text {
+  max-width: 1070px;
+  margin-bottom: 30px;
+}
+
+.projects__title-h3 {
+  margin-bottom: 16px;
+}
+
+.projects__link {
+  padding: 27px;
+  border: 1px solid #CACACA;
+  background: #FFF;
+}
+
+.projects__link:not(:last-child) {
+  margin-right: 34px;
+}
+
+
+

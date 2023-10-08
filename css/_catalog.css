@@ -1,0 +1,41 @@
+/* .catalog {
+  padding-top: 15px;
+} */
+
+.catalog__list-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.catalog__title {
+  color: #333;
+}
+
+.catalog__text {
+  max-width: 1080px;
+  margin-bottom: 40px;
+}
+
+.catalog__picture {
+  display: flex;
+  margin-right: 50px;
+  max-width: calc(50% - 50px);
+  min-height: fit-content;
+}
+
+
+.catalog__card-body {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  height: 470px;
+  overflow-y: auto;
+}
+
+.catalog__card-title {
+  margin-bottom: 5px;
+}
+
+.catalog__life-expectancy {
+  margin-bottom: 16px;
+}
+
