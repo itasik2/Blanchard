@@ -2,7 +2,7 @@
 @import url('../css/_global.css');
 @import url('../css/_variable.css');
 @import url('../css/_btn.css');
-@import url('../css/_header.css');
+@import url('./css/_header.css');
 @import url('../css/_hero.css');
 @import url('../css/_about.css');
 @import url('../css/_galery.css');
