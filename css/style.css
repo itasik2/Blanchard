@@ -1,5 +1,5 @@
 @import url(_fonts.css);
-@import url(_global.css);
+@import url(.//css/_global.css);
 @import url('../css/_variable.css');
 @import url('../css/_btn.css');
 @import url(./_header.css);
